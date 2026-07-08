@@ -3555,6 +3555,7 @@ class ThreadedHole(BasePartObject):
                     end_finishes=("fade", "fade"),
                     hand=fastener.hand,
                 ).move(Pos(Z=-self.hole_depth))
+            hole_part -= thread
 
         super().__init__(
             part=hole_part,
